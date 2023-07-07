@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: hsl(212, 23%, 69%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: blue;
+    border-radius: 1rem;
+}
+
+.p1{
+    width: 250px;
+    height: 200px;
+    background: goldenrod;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.imagem{
+    width: 250px;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.p2{
+    width: 350px;
+    height: 200px;
+    background: white;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.p2-text1{
+    font-weight: bold;
+}
+
+.p2-text2{
+    font-size: x-small;
+}
+
+.p2-div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+}
+
+.p2-div1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50%;
+}
+
+.imagem2{
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50% 50%;
+}
+
+.p2-div2{
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start; 
+}
+
+.p2-div2-1{
+    font-weight: bold;
+    font-size: small;
+}
+
+.p2-div2-2{
+    font-size: x-small;
+    color: gray;
+}
+
+.p2-div3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    background: rgb(211, 207, 207);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28%;
+}
+
+.p2-div4{
+    width: 20px;
+    height:20px;
+    border-radius: 50% 50%;
+    background: rgb(211, 207, 207);
+    cursor: pointer;
+    margin-left: 15%;
+    margin-top: 15%;
+    
+}
+
+.imagem3{
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    border-radius: 50% 50%;
+}
+
+.p3{
+    width: 200px;
+    height: 45px;
+    background: hsl(217, 19%, 35%);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 10px;
+    border-radius: 0.5rem;  
+    margin-left: calc(40% - 10px);
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    display: none;
+    
+    
+    
+   /* clip-path: polygon(0 0 , 100% 0 , 100% 81%, 58% 81%, 51% 100%, 41% 81%, 0 81%  );*/
+   /* border-bottom-left-radius: 1.31rem;*/
+}
+
+.p3-1{
+    width: 20px;
+    height: 20px;
+    background:transparent;
+}
+
+.p3-2{
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    border-radius: 50% 50%;
+    
+}
+
+.triangule{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: hsl(217, 19%, 35%);
+    position: absolute;
+    left: calc(50%-10px);
+    bottom: -10px;
+    clip-path: polygon(0% 0%,100% 100%, 0% 100%);
+    transform: rotate(-45deg);
+}
+
+/* JS*/
+
+.active{
+   display: block;
+   display: flex;
+   width: 200px;
+    height: 45px;
+    background: hsl(217, 19%, 35%);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 10px;
+    border-radius: 0.5rem;  
+    margin-left: 40%;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.active1{
+   background: gray;
+   color: rgb(211, 207, 207);
+}
+
+.active2{
+    fill:white
+ }
+
+ @media(max-width:1240px){
+    .p3{
+        margin-left: calc(48% - 10px);
+    }
+ }
+
+ @media(max-width:1040px){
+    .p3{
+        margin-left: calc(53% - 30px);
+    }
+ }
+
+ @media(max-width:900px){
+    .p3{
+        margin-left: calc(60% - 10px);
+    }
+ }
+
+ @media(max-width:800px){
+    .p3{
+        margin-left: calc(70% - 35px);
+    }
+ }
+
+ @media(max-width:700px){
+    .p3{
+        margin-left: calc(80% - 15px);
+    }
+ }
+
+
+ @media(max-width:600px){
+
+    .body{
+        width: 400px;
+        height: 100dvh;
+        margin: 20px;
+    }
+
+    .main{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .p1{
+        width: 300px;
+        height: 150px;
+        border-radius: 1rem 1rem 0 0;
+        
+
+    }
+
+    .imagem{
+        width: 300px;
+        height: 150px;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .p2{
+        width: 300px;
+        height: 250px;
+        border-radius: 0 0 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .p2-div{
+        margin-top: 15px;
+    }
+
+    .p2-div2{
+        display: flex;
+        flex-direction: column;  
+        align-items: flex-start; 
+    }
+
+    .p2-div2-1{
+        font-weight: bold;
+        font-size: x-small;
+        margin-top: 10px;
+    }
+
+    .p2-div3{
+        margin-top: 10px;
+        z-index: 2;
+       
+    }
+
+    
+
+    .p3{
+        width: 300px;
+        height: 100px; 
+        margin-left: 0%;
+        border-radius: 0 0 1rem 1rem;
+        z-index: 1;
+        margin-top: 290px;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    
+    .p3-1{
+        width: 20px;
+        height: 20px;
+        background:transparent;
+    }
+    
+    
+    
+    .triangule{
+        display: none;
+    }
+    
+    
+}
